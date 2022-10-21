@@ -1,9 +1,11 @@
-import PostItem from './PostItem'
+import PostItem from "./PostItem";
 
-const Posts = ({posts, setOnePost, onePost}) => {
-    return posts.map((post) => (
-        <PostItem post={post} setOnePost={setOnePost} onePost={onePost}/>
-    ))
-}
+const Posts = ({ posts, makeOnePost }) => {
+  return posts.map((post) => (
+    <>
+      <PostItem post={post} makeOnePost={makeOnePost} />
+    </>
+  ));
+};
 
-export default Posts
+export default Posts;

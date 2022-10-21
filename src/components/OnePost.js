@@ -1,8 +1,16 @@
 import React from 'react'
 
-const OnePost = ({post}) => {
+const OnePost = ({onePost, backToNull}) => {
+  console.log(onePost)
+
+  const handleClick = () => {
+    backToNull()
+  }
   return (
-    <div>{post}</div>
+    <>
+    <div>{onePost.title}</div>
+    <button onClick={handleClick}>back</button>
+    </>
   )
 }
 
